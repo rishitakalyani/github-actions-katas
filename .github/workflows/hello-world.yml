@@ -1,4 +1,4 @@
-name: hello-world
+name: Java CI
 on: push
 jobs:
   Clone-down:
@@ -17,7 +17,7 @@ jobs:
     container: gradle:6-jdk11
     steps:
       - name: Download code
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: code
           path: .
